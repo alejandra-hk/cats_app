@@ -370,6 +370,7 @@
 				DEVELOPMENT_TEAM = TXL9VWWT84;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = cats_app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CatPic;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -398,6 +399,7 @@
 				DEVELOPMENT_TEAM = TXL9VWWT84;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = cats_app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CatPic;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
