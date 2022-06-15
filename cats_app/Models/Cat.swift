@@ -9,6 +9,12 @@ import UIKit
 
 struct Cat: Decodable {
     let id: String
-    let created_at: String
+    let createdAt: String
     let tags: [String]
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case createdAt = "created_at"
+        case tags
+    }
 }

@@ -14,6 +14,8 @@ class ApiManager {
     private let session = URLSession.shared
     private let decoder = JSONDecoder()
     
+    private init() {}
+    
     func getDecodedData<D: Decodable>(from endpoint: ApiEndpoint) async throws -> D {
         let request = try createRequest(from: endpoint)
         let response: (data: Data, response: URLResponse) = try await session.data(for: request)

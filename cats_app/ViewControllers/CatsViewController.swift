@@ -137,11 +137,16 @@ private extension CatsViewController {
 // MARK: - Helper
 private extension CatsViewController {
     func showLoader() {
-        activityIndicator.startAnimating()
+        DispatchQueue.main.async {
+            self.activityIndicator.startAnimating()
+        }
+        
     }
     
     func hideLoader() {
-        activityIndicator.stopAnimating()
+        DispatchQueue.main.async {
+            self.activityIndicator.stopAnimating()
+        }
     }
     
     func cleanup() {
@@ -236,6 +241,7 @@ extension CatsViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return catImages.count
     }
